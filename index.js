@@ -67,7 +67,7 @@ const checkIsPerfect = (number) => {
     let isPerfect = false;
     let sum = 0;
 
-    if (number < 0) return isPerfect;
+    if (number < 0 || number === 0 ) return isPerfect;
 
     for (let i = 1; i < number - 1; i++) {
         if ( number % i === 0 ) {
